@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
 const User = mongoose.model("User", UserSchema);
 
 app.get("/", (req, res) => {
-  res.send("<h1>Updated from CI/CD</h1>");
+  res.send("<h1>Updated from GitHub Actions ECS Deployment</h1>");
 });
 
 app.post("/add", async (req, res) => {
