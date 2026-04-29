@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: my-node-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+  db:
+    image: mongo
+    container_name: my-mongo
+    ports:
+      - "27017:27017"
