@@ -10,7 +10,7 @@ env:
   ECR_REGISTRY: 281633886161.dkr.ecr.ap-northeast-1.amazonaws.com
   ECR_REPOSITORY: docker-node-practice
   ECS_CLUSTER: docker-node-cluster
-  ECS_SERVICE: docker-node-service
+  ECS_SERVICE: docker-node-task-service-dzjqllom
   IMAGE_TAG: latest
 
 jobs:
