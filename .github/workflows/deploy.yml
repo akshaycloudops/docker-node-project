@@ -11,7 +11,7 @@ env:
   ECR_REPOSITORY: docker-node-practice
   ECS_CLUSTER: docker-node-cluster
   ECS_SERVICE: docker-node-service
-  IMAGE_TAG: ${{ github.sha }}
+  IMAGE_TAG: latest
 
 jobs:
   deploy:
